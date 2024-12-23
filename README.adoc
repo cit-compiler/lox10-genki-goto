@@ -173,7 +173,15 @@ java com.craftinginterpreters.lox.Lox <プログラム>
 
 [source,console]
 ----
-ここに、Loxを実行したときのコマンドライン、その動作結果をテキストで貼り付ける。
+81904@LAPTOP-6ULJGAJA MINGW64 /c/users/81904/craftinginterpreters/lox01-genki-goto/codes (main)
+$ java com.craftinginterpreters.lox.Lox
+> 1+2*3
+(+ 1.0 (* 2.0 3.0))
+> 4*(5+6-7)
+(* 4.0 (group (- (+ 5.0 6.0) 7.0)))
+> 6-2*(4+2/8)
+(- 6.0 (* 2.0 (group (+ 4.0 (/ 2.0 8.0)))))
+
 ----
 
 作成できたら、一度「lox01」をコミットしなさい。
